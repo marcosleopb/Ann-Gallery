@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../index.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 	<title>Contacto</title>
 </head>
 <body>
@@ -30,35 +32,54 @@
 		  </h1>
 	</section>
 	<section>
-		<article>
-			<h2 class="aviso_productos"><a href="contacto.html">● WHATSAPP: +54 9 11 6919-2923</a></h2>
+		<article class="wrapper">
+			<div class="alert alert-success" role="alert">
+				<h4 class="alert-heading"> ● WHATSAPP</h4>
+				<p>¡El contacto por whatsapp es una alternativa mas rápida y sencilla para la organización con respecto a pedidos y entregas!</p>
+				<hr>
+				<p class="mb-0">+54 9 11 6919-2923</p>
+			  </div>
 		</article>
 	</section>
 	<form class="Formulario">
-		<fieldset id="customer">
-		  <label for="nombre">Nombre: </label>
-		  <input type="texto" name="nombre" id="nombre" required>
-	  
-		  <label for="email">Email: </label>
-		  <input type="email" name="email" id="email">
-		</fieldset>
-		<fieldset id="seleccionar">
-		  <legend>Seleccioná una opción:</legend>
-		  <label> <input type="radio" name="seleccionar" id="seleccionar_encargo" required value="encargo"> Encargo </label>
-		  <label> <input type="radio" name="seleccionar" id="seleccionar_peticion" required value="peticion"> Petición </label>
-		</fieldset>
-	  
-		<fieldset id="extra">
-		  <label> <input type="checkbox" name="extra" id="extra_info" value="extra"> Recibir información de mis nuevos productos vía correo electrónico </label>
-		</fieldset>
-
-		<fieldset id="instructions">
-		  <label for="comments">Detalles del encargo/consulta:</label>
-		  <textarea name="comments" id="comments" maxlength="500"></textarea>
-		</fieldset>
-	  
-		<button id="submit">ENVIAR</button>
-	  
+		<div class="form-row">
+		  <div class="form-group col-md-6">
+			<label for="inputEmail4">Nombre:</label>
+			<input type="email" class="form-control" id="inputEmail4" placeholder="Nombre">
+		  </div>
+		  <div class="form-group col-md-6">
+			<label for="inputPassword4">Email</label>
+			<input type="password" class="form-control" id="inputPassword4" placeholder="Email">
+		  </div>
+		</div>
+		<div class="form-check">
+			<label for="inputEmail4">Seleccioná una opción:</label>
+			<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+			<label class="form-check-label" for="exampleRadios1">
+			  Encargo
+			</label>
+			<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+			<label class="form-check-label" for="exampleRadios2">
+			  Consulta
+			</label>
+		  </div>
+		<div class="form-group">
+			<label for="exampleFormControlTextarea1">Detalles del encargo/consulta:</label>
+			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+		  </div>
+		<div>
+		  </div>
+		</div>
+		<button id="submit" type="button" class="btn btn-outline-secondary">ENVIAR</button>
+	</div>
+	<div class="form-group">
+	  <div class="form-check">
+		<input class="form-check-input" type="checkbox" id="gridCheck">
+		<label class="form-check-label" for="gridCheck">
+			Recibir información de mis nuevos productos vía correo electrónico
+		</label>
+	  </div>
+	</div>
 	  </form>
 
 	<!-- (FINAL) QUIEN SOY -->

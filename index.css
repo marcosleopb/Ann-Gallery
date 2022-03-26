@@ -128,7 +128,12 @@
   }
 }
 
-section article h2 {
+.intro {
+  animation-name: aparecertexto;
+  animation-duration: 2s;
+}
+
+.wrapper {
   animation-name: aparecertexto;
   animation-duration: 2s;
 }
@@ -246,6 +251,10 @@ li a {
   color: #ffffffdc;
 }
 
+.container-fluid {
+  
+}
+
 /*FINAL INDEX*/
 
 /*(INICIO) QUIENSOY*/
@@ -359,6 +368,22 @@ li a {
   color: black;
 }
 
+.alert alert-danger {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin: 5%;
+  width: 1000px;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1b1b1bd0;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
 /*(FINAL) PRODUCTOS*/
 
 /*(INICIO) GALERIA*/
@@ -468,12 +493,22 @@ li a {
   grid-gap: .8em .5em;
   background: #eee;
   padding: 1.2em;
+  width: 1000px;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1b1b1bd0;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
 }
 .Formulario textarea {
   height: calc(100% - 1.5em);
   }
 .Formulario button {
-  background: gray;
+  background: none;
   color: white;
   padding: 1em;
   }
@@ -552,11 +587,13 @@ fieldset {
     font-size: 10px;
     margin: auto;
     justify-content: center;
-    width: auto;
+    width: none;
     align-items: center;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 20%;
+    padding-top: 20%;
+    box-sizing: none;
   }
   .intro_logo{
     margin: auto;
@@ -576,6 +613,16 @@ fieldset {
   .footer_ul{
     display: flex;
     flex-direction: column;
+  }
+  .Formulario {
+    width: auto;
+   }
+  .wrapper {
+    width: auto;
+  }
+
+  section article h2 {
+    font-size: 14px;
   }
 
 /*---RESPONSIVE QUIEN SOY---*/
@@ -617,9 +664,6 @@ fieldset {
   .aviso_productos a{
     font-size: 70%;
   }
-
-
-
   }
 
 @media screen and (min-width:557px) and (max-width: 576px){
@@ -670,6 +714,18 @@ fieldset {
     width: 20%;
     height: 20%;
     margin-top: 7.5%;
+  }
+  .Formulario {
+    width: auto;
+   }
+  .wrapper {
+    width: auto;
+  }
+  section article h2 {
+    font-size: 16px;
+  }
+  .container-fluid {
+    margin-bottom: 15%;
   }
 
   /*---RESPONSIVE QUIEN SOY---*/
@@ -741,6 +797,16 @@ fieldset {
       padding-right: 10%;
       padding-bottom: 10%;
     }
+    .text_intro{
+      font-size: 18px;
+      margin: auto;
+      justify-content: center;
+      width: none;
+      align-items: center;
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-bottom: 10%;
+    }
     .intro_logo{
       margin: auto;
       width: none;
@@ -753,6 +819,15 @@ fieldset {
       width: auto;
       height: 20%;
       margin-top: 5.2%;
+    }
+    .Formulario {
+      width: auto;
+     }
+    .wrapper {
+      width: auto;
+    }
+    .container-fluid {
+      margin-bottom: 10%;
     }
   
     /*---RESPONSIVE QUIEN SOY---*/
@@ -793,6 +868,7 @@ fieldset {
 .aviso_productos a{
   font-size: 100%;
 }
+
     }
 
 /*(FINAL) RESPONSIVE*/
