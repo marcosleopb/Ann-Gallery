@@ -57,11 +57,11 @@
 
 /*ANIMS: TITULOS*/
 
-.block-effect {
+.efecto-bloque {
   font-size: calc(8px + 6vw);
 }
 
-.block-reveal {
+.aparecer-bloque {
   --t: calc(var(--td) + var(--d));
 
   color: transparent;
@@ -73,7 +73,7 @@
   animation: revealBlock 0s var(--t) forwards;
 }
 
-.block-reveal::after {
+.aparecer-bloque::after {
   content: '';
 
   width: 0%;
@@ -115,14 +115,6 @@
     transform: translateX(100%);
   }
 
-}
-
-.abs-site-link {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  color: hsla(0, 0%, 0%, .6);
-  font-size: 16px;
 }
 
 /*ANIMS: TRANSITIONS*/
@@ -206,13 +198,6 @@ li a {
   padding: 20px; 
   background-color: none;
   margin: auto;
-}
-
-.footer_ul{
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  text-align: left;
 }
 
 .intro{
