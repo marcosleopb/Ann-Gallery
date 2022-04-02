@@ -1,0 +1,51 @@
+header{
+  width: 100%;
+  margin-top: 50px;
+  overflow: hidden;
+  top: 0;
+  background-color: none;
+
+  .nav_logo{
+    position: absolute;
+    flex-direction: row;
+    z-index: 1;
+    top: 0px;
+  }
+}
+
+footer{
+  width: 100%;
+  overflow: hidden;
+  background-color: #ff5379;
+  text-decoration: dotted;
+  margin: 0%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+ul { 
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: stretch;
+  margin-left: 20%;
+  overflow: hidden;
+  background-color: none;
+
+  li { 
+    display: flex;
+    flex-direction: row;
+  }
+
+  li a {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    padding: 20px; 
+    background-color: none;
+    margin: auto;
+  }
+}   
