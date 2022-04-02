@@ -11,6 +11,8 @@
   
   /*ANIMS: NAV Y FOOTER*/
   
+  &
+
   .menu_anim li {
     position: relative;
     display: flex;
@@ -19,8 +21,8 @@
     text-transform: uppercase;
     transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 
-    .menu_anim li:after,
-    .menu_anim li:before {
+    &_anim li:after,
+    &_anim li:before {
       content: "";
       position: absolute;
       width: 0%;
@@ -28,13 +30,14 @@
       height: 1px;
       transition: all 0.3s ease;
       margin-top: 2px;
-      transition: all 300ms ease-in;
+      transition: all 300ms ease-in;  
+    }
 
       &_anim li:after {
         bottom: 25%;
         left: 0;
       }
-      
+
       &_anim li:before {
         top: 25%;
         right: 0;
@@ -52,8 +55,10 @@
         top: 25%;
         background-color: rgb(0, 0, 0);
       }
-    }
+    
   }
+  
+  
   
   /*ANIMS: TITULOS*/
   
