@@ -14,8 +14,8 @@
   color: black;
   text-transform: uppercase;
   transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1); }
-  .menu_anim li .menu_anim li:after,
-  .menu_anim li .menu_anim li:before {
+  .menu_anim li_anim li:after,
+  .menu_anim li_anim li:before {
     content: "";
     position: absolute;
     width: 0%;
@@ -24,26 +24,22 @@
     transition: all 0.3s ease;
     margin-top: 2px;
     transition: all 300ms ease-in; }
-    .menu_anim li .menu_anim li:after_anim li:after,
-    .menu_anim li .menu_anim li:before_anim li:after {
-      bottom: 25%;
-      left: 0; }
-    .menu_anim li .menu_anim li:after_anim li:before,
-    .menu_anim li .menu_anim li:before_anim li:before {
-      top: 25%;
-      right: 0; }
-    .menu_anim li .menu_anim li:after_anim li:hover::after,
-    .menu_anim li .menu_anim li:before_anim li:hover::after {
-      width: 100%;
-      height: 1px;
-      bottom: 25%;
-      background-color: black; }
-    .menu_anim li .menu_anim li:after_anim li:hover::before,
-    .menu_anim li .menu_anim li:before_anim li:hover::before {
-      width: 100%;
-      height: 1px;
-      top: 25%;
-      background-color: black; }
+  .menu_anim li_anim li:after {
+    bottom: 25%;
+    left: 0; }
+  .menu_anim li_anim li:before {
+    top: 25%;
+    right: 0; }
+  .menu_anim li_anim li:hover::after {
+    width: 100%;
+    height: 1px;
+    bottom: 25%;
+    background-color: black; }
+  .menu_anim li_anim li:hover::before {
+    width: 100%;
+    height: 1px;
+    top: 25%;
+    background-color: black; }
 
 /*ANIMS: TITULOS*/
 .efecto-bloque {
@@ -101,45 +97,6 @@
 .intro_logo {
   animation-name: aparecertexto;
   animation-duration: 2s; }
-
-.menu_anim li {
-  position: relative;
-  display: flex;
-  align-items: center;
-  color: black;
-  text-transform: uppercase;
-  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1); }
-
-.menu_anim li:after,
-.menu_anim li:before {
-  content: "";
-  position: absolute;
-  width: 0%;
-  display: block;
-  height: 1px;
-  transition: all 0.3s ease;
-  margin-top: 2px;
-  transition: all 300ms ease-in; }
-
-.menu_anim li:after {
-  bottom: 25%;
-  left: 0; }
-
-.menu_anim li:before {
-  top: 25%;
-  right: 0; }
-
-.menu_anim li:hover::after {
-  width: 100%;
-  height: 1px;
-  bottom: 25%;
-  background-color: black; }
-
-.menu_anim li:hover::before {
-  width: 100%;
-  height: 1px;
-  top: 25%;
-  background-color: black; }
 
 header {
   width: 100%;
