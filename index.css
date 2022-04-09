@@ -213,10 +213,6 @@ li a {
   box-sizing: content-box;
   height: 600px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1.5rem;
 
   text-align: justify;
   text-decoration: none;
