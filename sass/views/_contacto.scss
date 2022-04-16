@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+.Formulario {
+    display: grid;
+    grid-template-areas: 
+      "customer taxi"
+      "customer extras"
+      "pickup dropoff"
+      "instructions instructions"
+      "submit submit";
+    grid-template-columns: auto auto;  
+    grid-template-rows: auto auto auto auto;
+    grid-gap: .8em .5em;
+    background: #eee;
+    padding: 1.2em;
+    width: 1000px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1b1b1bd0;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  .Formulario textarea {
+    height: calc(100% - 1.5em);
+    }
+
+    .Formulario button {
+        background: none;
+        color: white;
+        padding: 1em;
+        }
+
+        .Formulario input:not([type=radio]):not([type=checkbox]), 
+        .Formulario textarea, 
+        .Formulario select {
+            width: 100%;
+           border: 0;
+           padding: 1em;
+           margin: .5em 0;
+         }
+
+         .Formulario label {
+            display: block; 
+           }
+           fieldset {
+             border: 0;
+           }
+           #customer {
+             grid-area: customer;
+           }
+           #extras {
+             grid-area: extras;
+           }
+           #instructions {
+             grid-area: instructions;
+           }
+           #submit {
+             grid-area: submit;
+           }
+
