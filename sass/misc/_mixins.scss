@@ -1,0 +1,7 @@
+@mixin intro($align-items: center, $justify-content: center, $flex-direction: column, $gap: 1.5rem) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    gap: $gap;
+}

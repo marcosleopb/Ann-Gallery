@@ -3,11 +3,18 @@
 @import './misc/animations';
 @import './misc/mixins';
 @import './misc/maps';
+<<<<<<< HEAD
 @import './misc/normalize';
+=======
+>>>>>>> rama_terciaria
 @import './partials/footer';
 @import './partials/header';
 @import './views/intro';
 @import './views/quiensoy';
+@import './views/contacto';
+@import './views/galeria';
+@import './views/productos';
+
 
 /*COMIENZO INDEX*/
 
@@ -21,10 +28,7 @@ body{
 }
 
 
-
 /*FINAL INDEX*/
-
-/*(FINAL) CONTACTO*/
 
 /*(INICIO) RESPONSIVE*/
 
