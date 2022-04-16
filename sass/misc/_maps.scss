@@ -2,7 +2,9 @@ $buttons: (
         facebook:  #748ecf,
         instagram: #9964c2,
         redes: white,
+        tdobras: #ff5379
 ); 
+
 @each $red, $color in $buttons {
    .btn--#{$red} {
        background-color: $color;
