@@ -46,29 +46,32 @@ body{
   /*---RESPONSIVE INDEX---*/
   header{
     margin-top: 0%;
-
-    ul{
-      display: flex;
-      flex-direction: column;
-      margin: auto 0.2rem;
-      padding-left: 10px;
-      width: auto;
-      align-items: center;
-    }
-    li{
-      font-size: 12px;
-      padding: 10px;
-      margin: auto;
-      justify-content: center;
-      width: auto;
-      align-items: center;
-    }
-    li a{
-      font-size: 12px;
-      padding: 10px;
-      margin: auto;
-    }
   }
+
+  ul{
+    display: flex;
+    flex-direction: column;
+    margin: auto 0.2rem;
+    padding-left: 10px;
+    width: auto;
+    align-items: center;
+  }
+
+  li{
+    font-size: 12px;
+    padding: 10px;
+    margin: auto;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+  }
+
+  li a{
+    font-size: 12px;
+    padding: 10px;
+    margin: auto;
+  }
+  
   .intro{
     font-size: 10px;
     margin: auto;
@@ -111,6 +114,8 @@ body{
     font-size: 14px;
   }
 
+
+  
 /*---RESPONSIVE QUIEN SOY---*/
 
   .titulo_qs{
